@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.navbar{
+    background-color: rgb(62, 67, 67);
+    color: white;
+    font-size: x-large;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-inside-div{
+    width:30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.hindi-movies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10vh 3% ;
+
+}
+
+/* movies cards realted css */
+.movie-cards{
+    width: 330px;
+    height: 550px;
+    background-color: rgb(121, 195, 230);
+    display: inline-block;
+    margin:  25px 10px;
+}
+.movies-cards-image>img{
+    width: 330px;
+    height: 490px;
+}
