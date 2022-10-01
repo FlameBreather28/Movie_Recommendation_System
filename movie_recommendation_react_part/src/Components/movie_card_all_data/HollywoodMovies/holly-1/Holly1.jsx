@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from './../../../Navbar';
-import Holly1 from './Holly1.jpg'
+import H1 from './Holly1.jpg'
 
 
-function H1() {
+function Holly1() {
     return (<>
         <Navbar />
         <div className="detailed-movie-info">
             <div className="detailed-movie-info-image">
-                <img src={Holly1} alt="" />
+                <img src={H1} alt="" />
             </div>
             <div className="detailed-movie-info-all">
                 <div className="detailed-move-info-all-data">
@@ -37,14 +37,10 @@ function H1() {
                 <div className="detailed-move-info-all-data"> <p>
                     <h3>Trailer :  </h3><a href="https://www.imdb.com/video/imdb/vi632472089/imdb/embed"> View trialer</a></p></div>
 
-
-
-
-
             </div>
         </div>
     </>
     )
 }
 
-export default H1
+export default Holly1
