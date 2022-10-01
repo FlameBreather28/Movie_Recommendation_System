@@ -122,7 +122,7 @@ h1{
 .detailed-movie-info-all{
   padding: 20px;
 }
-.detailed-move-info-all-data>*{
+.detailed-move-info-all-data{
   display: inline-block;
   margin: 20px 0 15px 0;
   font-size: larger;
@@ -131,7 +131,7 @@ h1{
 .detailed-move-info-all-data>a{
   color: black;
 }
-.detailed-move-info-all-data>a:hover{
+.detailed-move-info-all-data>p>a:hover{
   font-size: x-large;
   color:blue
 }
