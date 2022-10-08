@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './../../../Navbar';
 import H1 from './Holly1.jpg'
+import { Link } from "react-router-dom";
 
 
 function Holly1() {
@@ -34,9 +35,36 @@ function Holly1() {
                     <h3>ImDbRating :
                     </h3>8.4</p></div>
 
-                <div className="detailed-move-info-all-data"> <p>
-                    <h3>Trailer :  </h3><a href="https://www.imdb.com/video/imdb/vi632472089/imdb/embed"> View trialer</a></p></div>
+                {/* niche vale 3 div  */}
+                <div className="detailed-move-info-all-data">
+                        <p>
+                            <h3>Trailer : </h3>
+                            <Link    
+                                to="/trailer"
+                                state={{
+                                    url: `<iframe width="560" height="315" src="https://www.youtube.com/embed/giXco2jaZ_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+                                }}
+                            >
+                                Click here
+                            </Link>
+                        </p>
+                    </div>
+{/* 
+                    <div className="detailed-move-info-all-data">
+                        <p>
+                            <h3>Watch Movie here: </h3>
+                            <a href="https://wu.thesoap2day.com/movies/top-gun-maverick-PecBIa/">Click here</a>
+                        </p>
+                    </div> */}
 
+                    <div className="detailed-move-info-all-data">
+                        <form action="" method="POST" >
+                            <button  type="submit" >Recommend Movie on Current Title</button>
+                        </form>
+                    </div>
+    
+
+                
             </div>
         </div>
     </>
