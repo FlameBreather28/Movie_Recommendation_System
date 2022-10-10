@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@100;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@100;300;400;500&display=swap");
 
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap");
 
 * {
   margin: 0;
@@ -11,8 +8,8 @@
   /* font-family: 'Open Sans', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-font-family: 'Merriweather', serif;
-font-family: 'Source Serif Pro', serif;
+  font-family: "Merriweather", serif;
+  font-family: "Source Serif Pro", serif;
 }
 body {
   background-color: #abd8f693;
@@ -23,14 +20,15 @@ a {
   color: white;
 }
 
-h1{
-  margin:0 auto 40px;
-  width:100%;
+h1 {
+  margin: 0 auto 40px;
+  width: 100%;
   text-align: center;
+  font-size: 38px;
 }
 .navbar {
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
   background-color: #25316dfa;
   color: white;
   font-size: x-large;
@@ -55,27 +53,24 @@ h1{
   justify-content: space-around;
 }
 
-.userInputAndSearch{
+.userInputAndSearch {
   width: 210px;
   height: 35px;
   position: relative;
 }
-.userInputAndSearch>input{
-  margin:0;
+.userInputAndSearch > input {
+  margin: 0;
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  outline:none;
-  
+  outline: none;
 }
 
-.userInputAndSearch>img{
+.userInputAndSearch > img {
   position: absolute;
   right: 0;
 }
-
-
-
+.movies,
 .hindi-movies,
 .hollywood-movies,
 .top10-movies {
@@ -88,14 +83,17 @@ h1{
 
 /* movies cards realted css */
 .movie-cards {
-  width: 280px;
-  height: 460px;
-  background-color: rgb(124, 168, 213);
-  display: inline-block;
-  margin: 25px 10px;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 360px;
+    height: 560px;
+    background-color: rgb(124, 168, 213);
+    display: inline-block;
+    margin: 50px 45px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    font-size: large;
+    border-style: groove;
+    border-width: 2px;
 }
 .movie-cards:hover {
   position: relative;
@@ -106,16 +104,15 @@ h1{
 }
 
 .movies-cards-image > img {
-  width: 279px;
-  height: 408px;
-  border-radius: 15px 15px ;
+  width: 355px;
+  height: 490px;
+  border-radius: 15px 15px;
+  border-width: 1.5px;
+  border-style:  none none solid none;
 }
-.movies-cards-title{
-  margin:5px
-  
+.movies-cards-title {
+  margin: 5px;
 }
-
-
 
 /* animation */
 @keyframes pop-up-animation {
@@ -131,46 +128,45 @@ h1{
   }
 }
 
-
 /* all .hollywood styles */
 
-.detailed-movie-info{
+.detailed-movie-info {
   color: black;
- /* background-color: rgb(190, 252, 96); */
- width: 100%;
- max-height: fit-content;
- display: flex;
- margin:2px auto 0;
+  /* background-color: rgb(190, 252, 96); */
+  width: 100%;
+  max-height: fit-content;
+  display: flex;
+  margin: 2px auto 0;
 }
-.detailed-movie-info-image>img{
-  width:400px;
-  height:584px;
-  margin:0 15px 0 0
+.detailed-movie-info-image > img {
+  width: 470px;
+  height: 620px;
+  margin: 0 15px 0 0; 
+  border-width: 6px;
+  border-style: outset;
 }
-.detailed-movie-info-all{
+.detailed-movie-info-all {
   padding: 20px;
 }
-.detailed-move-info-all-data>p>h3{
+.detailed-move-info-all-data > p > h3 {
   display: inline-block;
   margin: 20px 0 15px 0;
   font-size: larger;
   letter-spacing: 1.2px;
 }
-.detailed-move-info-all-data>a{
+.detailed-move-info-all-data > a {
   color: black;
 }
-.detailed-move-info-all-data>p>a:hover{
+.detailed-move-info-all-data > p > a:hover {
   font-size: x-large;
-  color:blue
+  color: blue;
 }
-
-
 
 /* for iframe in Trailer component */
 iframe {
-  display: block;       /* iframe are inline by default */
+  display: block; /* iframe are inline by default */
   background: #000;
-  border: none;         /* Reset default border */
-  height: 100vh;        /* Viewport-relative units */
+  border: none; /* Reset default border */
+  height: 100vh; /* Viewport-relative units */
   width: 100vw;
 }

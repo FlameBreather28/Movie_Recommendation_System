@@ -47,7 +47,7 @@ function Hollywood_movies() {
                 </div>
                 <div className="movies-cards-title">
                     <h3>Top Gun: Maverick</h3>
-                    <h5>2022</h5>
+
                 </div>
             </div>
 
@@ -56,7 +56,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly2} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>The Dark Knight Rises</h3> <h5>2012</h5>
+                    <h3>The Dark Knight Rises</h3>
                 </div>
             </div>
 
@@ -65,8 +65,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly3} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>Guardians of the Galaxy</h3> <h5>2014</h5>
-                </div>
+                    <h3>Guardians of the Galaxy</h3>                 </div>
             </div>
 
             <div className="movie-cards HollyCard4" onClick={checkWhichCard}>
@@ -74,7 +73,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly4} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>Deadpool</h3> <h5>2016</h5>
+                    <h3>Deadpool</h3>
                 </div>
             </div>
 
@@ -83,7 +82,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly5} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>Star Wars: Episode VII - The Force Awakens</h3> <h5>2015</h5>
+                    <h3>Star Wars: The Force Awakens</h3>
                 </div>
             </div>
 
@@ -92,7 +91,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly6} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>Harry Potter and the Deathly Hallows: Part 2</h3> <h5>2011</h5>
+                    <h3>Harry Potter and the Deathly Hallows: Part 2</h3>
                 </div>
             </div>
 
@@ -101,7 +100,7 @@ function Hollywood_movies() {
                     <img srcSet={imgHolly7} alt="" />
                 </div>
                 <div className="movies-cards-title">
-                    <h3>Avengers: Age of Ultron</h3> <h5>2015</h5>
+                    <h3>Avengers: Age of Ultron</h3>
                 </div>
             </div>
 
@@ -111,8 +110,6 @@ function Hollywood_movies() {
                 </div>
                 <div className="movies-cards-title">
                     <h3>The Martian</h3>
-
-                    <h5>2015</h5>
                 </div>
             </div>
         </div>

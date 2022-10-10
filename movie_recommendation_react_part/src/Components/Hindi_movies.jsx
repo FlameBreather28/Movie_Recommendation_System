@@ -57,7 +57,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>The Kashmir Files</h3>
-                <h5>2022</h5>
+             
             </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Jai Bhim</h3>
-                <h5>2021</h5>
+               
             </div>
         </div>
 
@@ -77,7 +77,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Dangal</h3>
-                <h5>2016</h5>
+               
             </div>
         </div>
 
@@ -87,7 +87,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Laal Singh Chaddha</h3>
-                <h5>2022</h5>
+              
             </div>
         </div>
 
@@ -97,7 +97,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Shershaah</h3>
-                <h5>2021</h5>
+                
             </div>
         </div>
 
@@ -108,7 +108,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Soorarai Pottru</h3>
-                <h5>2020</h5>
+           
             </div>
         </div>
 
@@ -118,7 +118,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Baahubali 2: The Conclusion</h3>
-                <h5>2017</h5>
+             
             </div>
         </div>
 
@@ -128,7 +128,7 @@ export default function Hindi_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Brahmastra Part One: Shiva</h3>
-                <h5>2022</h5>
+            
             </div>
         </div>
 

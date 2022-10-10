@@ -13,7 +13,7 @@ function Holly5() {
             </div>
             <div className="detailed-movie-info-all">
                 <div className="detailed-move-info-all-data">
-                    <p><h3>Title :  </h3>Star Wars:Episode VII-The Force Awakens</p>
+                    <p><h3>Title :  </h3>Star Wars:The Force Awakens</p>
                 </div>
                 <div className="detailed-move-info-all-data"><p> <h3>RuntimeMins :</h3> 138</p></div>
                 <div className="detailed-move-info-all-data"><p>

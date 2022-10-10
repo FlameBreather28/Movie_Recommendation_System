@@ -64,7 +64,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Interstellar</h3>
-                <h5>2014</h5>
+            
             </div>
         </div>
 
@@ -74,7 +74,6 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>The Wolf of Wall Street</h3>
-                <h5>2013</h5>
 
             </div>
         </div>
@@ -85,7 +84,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Joker</h3>
-                <h5>2019</h5>
+              
 
             </div>
         </div>
@@ -96,7 +95,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Avengers: Endgame</h3>
-                <h5>2019</h5>
+        
 
             </div>
         </div>
@@ -107,7 +106,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Avengers: Infinity War</h3>
-                <h5>2018</h5>
+          
 
             </div>
         </div>
@@ -119,7 +118,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Harry Potter and the Deathly Hallows: Part 2</h3>
-                <h5>2011</h5>
+             
 
             </div>
         </div>
@@ -130,7 +129,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Parasite</h3>
-                <h5>2019</h5>
+             
 
             </div>
         </div>
@@ -141,7 +140,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Logan</h3>
-                <h5>2017</h5>
+             
 
             </div>
         </div>
@@ -152,7 +151,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Spider-Man: No Way Home</h3>
-                <h5>2021</h5>
+              
 
             </div>
         </div>
@@ -163,8 +162,7 @@ export default function Top_10_movies() {
             </div>
             <div className="movies-cards-title">
                 <h3>Transformers: The Last Knight</h3>
-                <h5>2017</h5>
-
+          
             </div>
         </div>
     </div>
