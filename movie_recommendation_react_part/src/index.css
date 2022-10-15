@@ -52,7 +52,10 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
-
+.logoAndCaption{
+  text-align: center;
+  font-size: large;
+}
 .userInputAndSearch {
   width: 210px;
   height: 35px;
@@ -157,16 +160,57 @@ h1 {
 .detailed-move-info-all-data > a {
   color: black;
 }
-.detailed-move-info-all-data > p > a:hover {
+/* .detailed-move-info-all-data > p > a:hover {
   font-size: x-large;
   color: blue;
-}
+} */
 
 /* for iframe in Trailer component */
 iframe {
   display: block; /* iframe are inline by default */
   background: #000;
   border: none; /* Reset default border */
-  height: 100vh; /* Viewport-relative units */
+  height: 85vh; /* Viewport-relative units */
   width: 100vw;
+}
+
+
+/* return div in trailer component */
+
+.returnBackToHome{
+  background-color:rgba(206, 229, 229, 0.633);
+  width: 100vw;
+  height: 15vh;
+  text-align: center;
+}
+.returnBackToHome>a{
+  font-size: larger;
+  padding: 35px 0 0 ;
+  color: black;
+}
+.returnBackToHome>a:hover{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* form recommend button */
+form>button{
+  padding: 10px;
+  font-size: large;
+  border-radius: 15px;
+}
+
+form>button:hover{
+  background-color: rgba(77, 159, 203, 0.825);
+}
+
+
+/* trailer link from response and other pages */
+.trailerLink{
+  color: black;
+  font-size: large;
+}
+.trailerLink:hover{
+  color:  rgb(37, 62, 246);
+  font-size: 20px;
 }

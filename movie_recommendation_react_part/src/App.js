@@ -37,6 +37,7 @@ import Top10 from './Components/movie_card_all_data/Top10Movies/t-10/Top10'
 import Response from './Components/Response';
 import Trailer from './Components/Trailer'
 import RecommendationToUser from './Components/RecommendationToUser';
+import DynamicTrailer from './Components/DynamicTrailer';
 
 
 
@@ -110,6 +111,7 @@ function App() {
       <Route exact path='/UserSearchResponse' element={<Response />} />
       <Route exact path="/trailer" element={<Trailer />} />
       <Route exact path="/recommendationToUser" element={<RecommendationToUser />} />
+      <Route exact path='/DynamicTrailer' element={<DynamicTrailer/>}/>
 
       <Route path='/*' element={<div style={{ fontSize: '30px' }} ><h1>Error :Wrong URL</h1> <Link to='/' style={{ color: 'black', textAlign: 'center', display: 'block', }}>GO TO home Page</Link></div>} />
     </Routes>

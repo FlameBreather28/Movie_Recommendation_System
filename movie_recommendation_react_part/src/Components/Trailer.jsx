@@ -8,10 +8,13 @@ function Trailer() {
   const trailerUrl=location.state.url;
   console.log(trailerUrl)
 
-  return (<>
-  
-  {parse(trailerUrl)}
 
+  return (<>
+
+  {parse(trailerUrl)}
+<div className='returnBackToHome'>
+  <a href='http://localhost:3000'>click to return to Home page</a>
+</div>
 
   </>
   )

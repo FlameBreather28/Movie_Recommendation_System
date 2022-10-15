@@ -34,7 +34,7 @@ function Hin1() {
                        {/* niche vale 3 div  */}
                     <div className="detailed-move-info-all-data">
                         <p>
-                            <h3>Trailer : </h3>
+                         
                             <Link    
                                 to="/trailer"
                                 state={{

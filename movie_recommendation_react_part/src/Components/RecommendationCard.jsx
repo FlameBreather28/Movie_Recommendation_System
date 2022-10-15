@@ -8,7 +8,7 @@ function RecommendationCard(props) {
 
     useEffect(() => {
         console.log('working in useEffect')
-        fetch(`https://imdb-api.com/en/API/Title/k_nex3m0mq/${id}`)
+        fetch(`https://imdb-api.com/en/API/Title/k_ub0qd14u/${id}`)
         .then((Response) => Response.json())
         // .then(h=>console.log("work",h))
         .then((data) => {

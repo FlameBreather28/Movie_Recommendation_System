@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { json, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
 function Response(pops) {
@@ -26,12 +26,9 @@ function Response(pops) {
             // .then(res=>console.log(res))
             .then((res) => {
                 console.log(res)
-                console.log(typeof(res))
+                console.log(typeof (res))
                 navigate('/recommendationToUser', { state: res })
             })
-
-
-
 
 
     }
@@ -69,8 +66,12 @@ function Response(pops) {
                     <h3>ImDbRating :
                     </h3>{location.state.array[6]}</p></div>
 
-                <div className='detailed-move-info-all-data'> <p>
-                    <h3>Trailer :  </h3><a href='https://www.imdb.com/video/imdb/vi632472089/imdb/embed'> View trailer</a></p></div>
+                <div className='detailed-move-info-all-data'>
+                    <p>
+                        <h3>Trailer : </h3>
+                        <Link to='/DynamicTrailer' state={{ id: location.state.array[7] }} className='trailerLink'>View Trailer</Link>
+                    </p>
+                </div>
 
                 <div className="detailed-move-info-all-data">
                     <form onSubmit={sendDataToBackend} >
