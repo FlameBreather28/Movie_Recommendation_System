@@ -2,5 +2,5 @@ venv
 .idea
 CosSimilarityData.npy
 .vscode
-movie_recommendation_react_part/node_modules/
+movie_recommendation_react_part/node_modules
 nodejs_backend/node_modules

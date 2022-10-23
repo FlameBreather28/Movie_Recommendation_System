@@ -27,7 +27,7 @@ function Navbar(props) {
       let userValueInSmallCase = userValueWithoutSpaces.toLowerCase();
 
 
-      fetch(`https://imdb-api.com/API/AdvancedSearch/k_uyhnt8z6/?title=${userValue}`)
+      fetch(`https://imdb-api.com/API/AdvancedSearch/k_ub0qd14u/?title=${userValue}`)
         .then((Response) => Response.json())
         .then((data) => {
 
@@ -61,7 +61,7 @@ function Navbar(props) {
 
 
         }).catch(() => {
-          alert("Please check the Search string it doesn't match any Movie Title")
+          alert("Your search didn't match any movie.")
         })
 
 

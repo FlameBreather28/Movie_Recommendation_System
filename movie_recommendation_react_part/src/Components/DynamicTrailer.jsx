@@ -8,7 +8,7 @@ function DynamicTrailer() {
     let [Url, setUrl] = useState('');
     useEffect(() => {
        
-            fetch(`https://imdb-api.com/en/API/YouTubeTrailer/k_uyhnt8z6/${id}`)
+            fetch(`https://imdb-api.com/en/API/YouTubeTrailer/k_ub0qd14u/${id}`)
                 .then(response => response.json())
                 .then(result => {
                       console.log(result)

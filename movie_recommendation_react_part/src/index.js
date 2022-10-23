@@ -11,6 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
+  {console.log("Index.html  page is Rendered at http://localhost:3000")}
   <App/>
   </BrowserRouter>
 

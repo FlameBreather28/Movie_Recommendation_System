@@ -1,10 +1,35 @@
 import React from 'react';
 import Navbar from './../../../Navbar';
 import H1 from './Holly1.jpg'
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 
 function Holly1() {
+    const navigate = useNavigate();
+    const url = "http://localhost:9000/currentmoviedata"
+
+    async function sendDataToBackend(a) {
+        a.preventDefault();
+         let movieName="Top Gun: Maverick"
+        fetch(url, {
+            method: "POST",
+            body: JSON.stringify({
+                movieTitle: movieName,
+            }),
+            mode: "cors",
+            headers: { "Content-type": "application/json;charset=utf-8" }
+        }
+        )
+            .then((res) => res.json())
+            // .then(res=>console.log(res))
+            .then((res) => {
+                console.log(res)
+                console.log(typeof (res))
+                navigate('/recommendationToUser', { state: res })
+            })
+
+
+    }
     return (<>
         <Navbar />
         <div className="detailed-movie-info">
@@ -43,7 +68,7 @@ function Holly1() {
                                 to="/trailer"
                                 state={{
                                     url: `<iframe width="560" height="315" src="https://www.youtube.com/embed/giXco2jaZ_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-                                }}
+                                }} className='trailerlink' 
                             >
                                 Click here
                             </Link>
@@ -58,7 +83,7 @@ function Holly1() {
                     </div> */}
 
                     <div className="detailed-move-info-all-data">
-                        <form action="" method="POST" >
+                        <form onSubmit={sendDataToBackend} >
                             <button  type="submit" >Recommend Movie on Current Title</button>
                         </form>
                     </div>
