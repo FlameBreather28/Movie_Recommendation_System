@@ -12,48 +12,44 @@ router.get('/', (request, response) => {
 })
 
 router.post('/', async (request, response) => {
+
     // let ResultFromPython={}
     console.log(request.body)
     var movieTitle=request.body
-    let onlyTitle=movieTitle['movieTitle']
+    let onlyTitle=movieTitle['movieTitle'];
     const childPython = spawn('python', ['./../Python files/main.py', `${onlyTitle}`]);
 
 
     childPython.stdout.on('data', (data) => {
+    
         // console.log(`stdout: ${data}`);
-           
-        
-        var myStr = data.toString()
-        var jsonData=JSON.parse(myStr)
+        var myStr = data.toString();
+        var jsonData = JSON.parse(myStr);
 
         // console.log(typeof(myStr))
         //    ResultFromPython=JSON.stringify(data)
-
         //    console.log(typeof(ResultFromPython))
         //    response.send(ResultFromPython)
-
-        console.log(jsonData)
-        console.log(typeof (jsonData))
-        response.send(jsonData)
-
-
-
-
-
+        console.log(jsonData);
+        console.log(typeof (jsonData));
+      
+        // response.setHeader('X-Foo', 'bar')
+         response.send(jsonData)
+        //    return jsonData;
     })
-
-    childPython.stderr.on('data', (data) => {
+ 
+     childPython.stderr.on('data', (data) => {
         console.error(`stderr: ${data}`);
     })
-
-    childPython.on('close', (data) => {
-        console.log(`child process exited with code: ${data}`)
-    })
-
-    // console.log(type(ResultFromPython))
-    // response.send(ResultFromPython)
-    // console.log(myStr)
-    // return myStr;
+ 
+     childPython.on('close', (data) => {
+         console.log(`child process exited with code: ${data}`)
+     })
+     // response.send(ResultFromPython)
+     // console.log(myStr)
+     // return myStr;
+ //    response.send(checkError)
+    
 
 }
 )
@@ -64,9 +60,11 @@ router.post('/', async (request, response) => {
 
 
 
-function Top10Movies(title) {
-    // console.log(title['movieTitle'])
-    
+ function  Top10Movies (onlyTitle) {
+    let inc=0;
+  
+   
+
 }
 
 

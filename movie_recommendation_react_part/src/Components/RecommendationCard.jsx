@@ -13,7 +13,7 @@ function RecommendationCard(props) {
         // .then(h=>console.log("work",h))
         .then((data) => {
 
-            console.log("hello", data)
+            // console.log("hello", data)
             let { title, image } = data
             console.log(title)
             changeTitle(title)

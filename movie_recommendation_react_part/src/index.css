@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@100;300;400;500&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Source+Serif+Pro:wght@200;300;400;600&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,8 @@ font-family: 'Roboto', sans-serif; */
   font-family: "Source Serif Pro", serif;
 }
 body {
-  background-color: #abd8f693;
+  /* background-color: #abd8f693; */
+  background-color: #232323;
 }
 a {
   text-decoration: none;
@@ -25,11 +26,13 @@ h1 {
   width: 100%;
   text-align: center;
   font-size: 38px;
+  color: white;
 }
 .navbar {
   position: sticky;
   top: 0;
-  background-color: #25316dfa;
+  /* background-color: #25316dfa; */
+  background-color:#373737;
   color: white;
   font-size: x-large;
   width: 100%;
@@ -88,7 +91,8 @@ h1 {
 .movie-cards {
   width: 360px;
     height: 560px;
-    background-color: rgb(124, 168, 213);
+    /* background-color: rgb(124, 168, 213); */
+  background-color: #393939;
     display: inline-block;
     margin: 50px 45px;
     text-align: center;
@@ -115,6 +119,7 @@ h1 {
 }
 .movies-cards-title {
   margin: 5px;
+  color: white;
 }
 
 /* animation */
@@ -134,7 +139,8 @@ h1 {
 /* all .hollywood styles */
 
 .detailed-movie-info {
-  color: black;
+  /* color: black; */
+  color: white;
   /* background-color: rgb(190, 252, 96); */
   width: 100%;
   max-height: fit-content;
@@ -156,6 +162,7 @@ h1 {
   margin: 20px 0 15px 0;
   font-size: larger;
   letter-spacing: 1.2px;
+  text-shadow: 0.5px 0.5px 2.5px white;
 }
 .detailed-move-info-all-data > a {
   color: black;
@@ -201,16 +208,48 @@ form>button{
 }
 
 form>button:hover{
-  background-color: rgba(77, 159, 203, 0.825);
+  /* background-color: rgba(77, 159, 203, 0.825); */
+  background-color: rgb(76 71 71 / 74%);
+
+  color: white;
 }
 
 
 /* trailer link from response and other pages */
 .trailerLink{
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: large;
 }
 .trailerLink:hover{
-  color:  rgb(37, 62, 246);
-  font-size: 20px;
+  color:  rgb(153, 163, 165);
+  font-size: 22.5px;
+}
+.trailerlink{
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+.trailerlink:hover{
+  color:  rgb(153, 163, 165);
+  font-size: 22.5px;
+}
+
+
+/* footer */
+
+.footer{
+  padding: 60px 0 30px;
+  text-align: center;
+  font-size: larger;
+  color:white;
+  background-color:#2e2e2e;
+
+}
+.footer>a{
+  margin:30px;
+  font-size: large;
+
+}
+.footer>a:hover{
+  color:  rgb(153, 163, 165);
+  font-size: 19px;
 }

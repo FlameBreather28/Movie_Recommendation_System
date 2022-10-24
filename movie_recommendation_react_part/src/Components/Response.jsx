@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import swal from 'sweetalert';
 
 
 function Response(pops) {
@@ -22,13 +23,20 @@ function Response(pops) {
             headers: { "Content-type": "application/json;charset=utf-8" }
         }
         )
-            .then((res) => res.json())
+        .then((res) => res.json())
             // .then(res=>console.log(res))
-            .then((res) => {
-                console.log(res)
+        .then((res) => {
+                console.log(res[0])
                 console.log(typeof (res))
+                if(res[0]==="error"){
+                    
+                    swal("Can't Recommend","Current movie is not present in Our Data Set","error")
+                }else{
+                    console.log("working")
                 navigate('/recommendationToUser', { state: res })
-            })
+                    
+                }
+        })
 
 
     }
@@ -41,7 +49,7 @@ function Response(pops) {
     return (<>
 
         <Navbar />
-        {console.log(location)}
+        {/* {console.log(location)} */}
         <div className='detailed-movie-info'>
             <div className='detailed-movie-info-image'>
                 <img srcSet={location.state.array[0]} alt='' />

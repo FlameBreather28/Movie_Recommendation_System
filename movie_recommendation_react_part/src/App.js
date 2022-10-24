@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Hollywood from './Components/Hollywood_movies';
 import Hindi from './Components/Hindi_movies';
 import Top10Movies from './Components/Top_10_movies';
+import Footer from './Components/Footer';
 import { Routes, Route, Link } from "react-router-dom";
 import Holly1 from './Components/movie_card_all_data/HollywoodMovies/holly-1/Holly1'
 import Holly2 from './Components/movie_card_all_data/HollywoodMovies/holly-2/Holly2'
@@ -75,7 +76,7 @@ function App() {
   // render(){
   return (<>
     <Routes>
-      <Route exact path='/' element={<><Navbar value={check} /><Hollywood /><Hindi /><Top10Movies />
+      <Route exact path='/' element={<><Navbar value={check} /><Hollywood /><Hindi /><Top10Movies /><Footer/>
         {/* <p className="App-intro">;{this.state.apiResponse}</p> */}
       </>} />
 
