@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import searchIcon from './SearchIcon/icons8-search-color-32.png'
-import logo from 'C:/Users/susha/OneDrive/Desktop/sem 5 project/movie_recommendation_react_part/src/Components/SearchIcon/logo.png'
+import logo from './SearchIcon/logo.png'
 // let [url, setUrl] = useState();
 import swal from 'sweetalert';
 

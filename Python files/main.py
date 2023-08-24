@@ -13,11 +13,11 @@ try:
 
         #####  ----  Reading the Original csv file -----
         movies_data = pd.read_csv(
-            'C:/Users/susha/OneDrive/Desktop/sem 5 project/Python files/2000 to 2022 with hindi movies.csv')
+            'D:/College/TE/SEM 5/SEM 5 Project  movie recommendation/sem 5 project/Python files/2000 to 2022 with hindi movies.csv')
         # movies_data.head()
 
         #####  ----  This is the output of Cosine Similarity -----
-        similarity = np.load('C:/Users/susha/OneDrive/Desktop/sem 5 project/Python files/CosSimilarityData.npy')
+        similarity = np.load('D:/College/TE/SEM 5/SEM 5 Project  movie recommendation/sem 5 project/Python files/CosSimilarityData.npy')
         # print(similarity)
         # similarity.shape
 
